@@ -1,0 +1,113 @@
+:root {
+  --bg-color: #ffffff;
+  --txt-color: #282129;
+  --btn-color: #272727;
+  --border-color: #000000;
+  --submit-bg-color: #242226;
+  --submit-bg-hover-color: #4c494f;
+  --submit-txt-color: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg-color: #242226;
+  --txt-color: #eee9f1;
+  --btn-color: #f1eaf4;
+  --border-color: #57515a;
+  --submit-bg-color: #f3eaf5;
+  --submit-bg-hover-color: #c4bbc9;
+  --submit-txt-color: #343037;
+}
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  transition: .3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 12em;
+  width: 32em;
+  justify-content: space-evenly;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  padding: 5px 0 20px 0;
+}
+
+label {
+  color: var(--txt-color);
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  height: 1.4em;
+  color: var(--txt-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  transition: .3s ease-in-out;
+}
+
+input[disabled] {
+  color: var(--txt-color);
+  background-color: var(--bg-color);
+}
+
+input[type="submit"] {
+  background-color: var(--submit-bg-color);
+  color: var(--submit-txt-color);
+  font-size: 25px;
+  transition: .2s ease-in-out;
+  width: 300px;
+  margin-top: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--submit-bg-hover-color);
+}
+
+h1 {
+  color: var(--txt-color);
+  text-align: center;
+  font-size: 45px;
+  margin: 2rem 0 2.5rem 0;
+}
+
+button {
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+svg {
+  color: var(--bg-color);
+  width: 25px;
+  height: 25px;
+}
