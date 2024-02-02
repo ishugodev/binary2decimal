@@ -2,4 +2,4 @@
 This is a binary and decimal number converter.\
 **This project is still in progress.**
 
-By: hugoish
+By: hugoishim
